@@ -313,7 +313,8 @@
         "freebies_n4mTXi"
       ],
       "custom_css": [
-        ".option-title-tooltip {display: none;}"
+        ".option-title-tooltip {display: none;}",
+        "button.redirect .main-button-container {background-color: #003659 !important;}"
       ],
       "name": "C Featured Product",
       "settings": {
