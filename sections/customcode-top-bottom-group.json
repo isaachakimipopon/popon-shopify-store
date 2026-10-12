@@ -67,7 +67,7 @@
             "sold_out_text": "Sold Out",
             "background_color": "#02bf63",
             "text_color": "#ffffff",
-            "blurb": "<h5>HURRY! <strong>EXTRA $20 DISCOUNT</strong> IS APPLIED</h5>",
+            "blurb": "<h5>HURRY! YOUR <strong>$220 DISCOUNT</strong> IS APPLIED</h5>",
             "display_payment": true,
             "footer_blurb": "<h5><strong>$29</strong>/month plans through Affirm & Klarna</h5>",
             "display_compare_price": false,
