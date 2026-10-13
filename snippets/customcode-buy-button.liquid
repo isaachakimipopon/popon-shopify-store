@@ -93,7 +93,7 @@
       </div>
       {% if block.settings.blurb != blank or block.settings.display_payment or block.settings.footer_blurb != blank %}
         <div class="info-container">
-          {% if block.settings.blurb != blank %}
+          {% if block.settings.blurb != blank or block.settings.blurb_html != null %}
             <div class="blurb">
               <span>
               {{ block.settings.blurb }}
