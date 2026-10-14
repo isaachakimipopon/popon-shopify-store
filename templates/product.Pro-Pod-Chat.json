@@ -41,6 +41,7 @@
         "faq"
       ],
       "settings": {
+        "logo": "shopify://shop_images/1-Default-logo_blue_white_with_registered-min.png",
         "brand": "POP ON",
         "nav_label": "Page navigation",
         "button": "Order Now"
