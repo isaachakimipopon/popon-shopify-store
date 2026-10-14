@@ -318,7 +318,7 @@
         "item4"
       ],
       "custom_css": [
-        ".pp-badge{display: none;}"
+        ".pp-badge {display: none;}"
       ],
       "settings": {
         "mode": "cards",
@@ -345,7 +345,7 @@
         "anchor": "",
         "eyebrow": "",
         "heading": "From the team behind Pop On Veneers.",
-        "body": "<p>At Pop On Smiles, removable appliances are part of what we do. Pro Pod extends that focus to an everyday essential: caring for the appliance you already have.</p>",
+        "body": "<p>At Pop On Veneers, removable appliances are part of what we do. Pro Pod extends that focus to an everyday essential: caring for the appliance you already have.</p>",
         "asset": "",
         "alt": "",
         "reverse": false,
