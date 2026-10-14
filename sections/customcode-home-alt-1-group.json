@@ -1101,7 +1101,7 @@
           "settings": {
             "title": "Full Set",
             "description": "Both Top and Bottom Included",
-            "price_display": "$479 | $699",
+            "price_display": "$499 | $699",
             "blurb": "",
             "image": "shopify://shop_images/Homepage_Image_1-min.png"
           }
@@ -1111,7 +1111,7 @@
           "settings": {
             "title": "Half Set",
             "description": "Just Top or Just Bottom",
-            "price_display": "$279 | $499",
+            "price_display": "$299 | $499",
             "blurb": "",
             "image": "shopify://shop_images/Homepage_Image_2-min.png"
           }
