@@ -40,6 +40,9 @@
         "benefits",
         "faq"
       ],
+      "custom_css": [
+        ".pp-logo img {width: 80px !important; max-width: 150px !important; height: auto !important;}"
+      ],
       "settings": {
         "logo": "shopify://shop_images/1-Default-logo_blue_white_with_registered-min.png",
         "brand": "POP ON",
