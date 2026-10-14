@@ -81,9 +81,10 @@
         ".c-inner {justify-content: center; gap: 5px; max-width: 700px; margin: auto;}",
         ".c-inner > *:not(:last-child) {border-right: 1px solid #7c221d;}",
         ".c-inner.c-custom {max-width: 150px;}",
+        ".ccc-button {background: #02bf63; color: white;}",
         "#ab-five-variant,#ab-three-variant {display: none; margin-bottom: 0;}",
-        "@media screen and (max-width: 768px) {c-content-generator {padding-top: 0 !important; }}",
-        "@media screen and (min-width: 769px) {.c-inner.c-custom {max-width: 250px; } .content-block.block-liquid[data-index=\"1\"] {margin-bottom: 30px; }}"
+        "@media and (max-width: 768px) {c-content-generator {padding-top: 0 !important; }}",
+        "@media and (min-width: 769px) {.c-inner.c-custom {max-width: 250px; } .content-block.block-liquid[data-index=\"1\"] {margin-bottom: 30px; }}"
       ],
       "name": "C Content Generator",
       "settings": {
@@ -1100,7 +1101,7 @@
           "settings": {
             "title": "Full Set",
             "description": "Both Top and Bottom Included",
-            "price_display": "$499 | $699",
+            "price_display": "$479 | $699",
             "blurb": "",
             "image": "shopify://shop_images/Homepage_Image_1-min.png"
           }
@@ -1110,7 +1111,7 @@
           "settings": {
             "title": "Half Set",
             "description": "Just Top or Just Bottom",
-            "price_display": "$299 | $499",
+            "price_display": "$279 | $499",
             "blurb": "",
             "image": "shopify://shop_images/Homepage_Image_2-min.png"
           }
