@@ -21,8 +21,8 @@
                 <div class="price-container">
                   {% assign price_array = block.settings.price_display | split: '|' %}
                   <h3>
+                    <s>{{ price_array[1] }}</s>                    
                     {{ price_array[0] }}
-                    <s>{{ price_array[1] }}</s>
                   </h3>
                 </div>
                 <p class="blurb">
