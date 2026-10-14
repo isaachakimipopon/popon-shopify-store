@@ -1,0 +1,20 @@
+{% doc %}
+  Renders an editable campaign image with a bundled asset fallback.
+  @param {image} image - Selected image
+  @param {string} asset - Fallback asset filename
+  @param {string} alt - Alternative text
+  @param {boolean} [eager] - Prioritize the hero image
+{% enddoc %}
+{% liquid
+  assign loading = 'lazy'
+  assign priority = 'auto'
+  if eager
+    assign loading = 'eager'
+    assign priority = 'high'
+  endif
+%}
+{% if image != blank %}
+  {{ image | image_url: width: 1800 | image_tag: class: 'pp-image', widths: '400,600,900,1200,1800', sizes: '(max-width: 749px) 100vw, 50vw', loading: loading, fetchpriority: priority, alt: alt }}
+{% elsif asset != blank %}
+  <img class="pp-image" src="{{ asset | asset_url }}" alt="{{ alt | escape }}" width="1536" height="1536" loading="{{ loading }}" fetchpriority="{{ priority }}">
+{% endif %}
