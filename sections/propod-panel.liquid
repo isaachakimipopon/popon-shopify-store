@@ -1,0 +1,208 @@
+<section class="pp-section pp-{{ section.settings.mode }}{% if section.settings.reverse %} pp-reverse{% endif %}" style="--pp-bg:{{ section.settings.background }};--pp-ink:{{ section.settings.ink }};--pp-accent:{{ section.settings.accent }};--pp-space:{{ section.settings.padding }}px" {% if section.settings.anchor != blank %}id="{{ section.settings.anchor | escape }}"{% endif %}>
+  <div class="pp-container">
+    {% if section.settings.mode == 'banner' %}
+      <div class="pp-media">{% render 'propod-image', image: section.settings.image, asset: section.settings.asset, alt: section.settings.alt %}</div>
+    {% else %}
+      <div class="pp-copy">
+        {% if section.settings.eyebrow != blank %}<p class="pp-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+        {% if section.settings.heading != blank %}{% if section.settings.mode == 'hero' %}<h1>{{ section.settings.heading | escape }}</h1>{% else %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}{% endif %}
+        {% if section.settings.body != blank %}<div class="pp-body">{{ section.settings.body }}</div>{% endif %}
+        {% if section.settings.buy %}{% render 'propod-buy', product: product, section_id: section.id, label: section.settings.button %}{% endif %}
+        {% if section.settings.note != blank %}<p class="pp-note">{{ section.settings.note | escape }}</p>{% endif %}
+      </div>
+      {% if section.settings.mode == 'hero' or section.settings.mode == 'split' or section.settings.mode == 'cta' %}
+        <div class="pp-media">{% assign eager = false %}{% if section.settings.mode == 'hero' %}{% assign eager = true %}{% endif %}{% render 'propod-image', image: section.settings.image, asset: section.settings.asset, alt: section.settings.alt, eager: eager %}</div>
+      {% endif %}
+      {% if section.blocks.size > 0 %}
+        <div class="pp-blocks pp-count-{{ section.blocks.size }}">
+          {% for block in section.blocks %}
+            {% if section.settings.mode == 'faq' %}
+              <details class="pp-faq-item" {{ block.shopify_attributes }}><summary>{{ block.settings.heading | escape }}<span aria-hidden="true">+</span></summary><div class="pp-body">{{ block.settings.body }}</div></details>
+            {% else %}
+              <article class="pp-card" {{ block.shopify_attributes }}>
+                {% if block.settings.image != blank or block.settings.asset != blank %}<div class="pp-card-image">{% render 'propod-image', image: block.settings.image, asset: block.settings.asset, alt: block.settings.alt %}</div>{% endif %}
+                {% if block.settings.badge != blank %}<span class="pp-badge">{{ block.settings.badge | escape }}</span>{% endif %}
+                {% if block.settings.heading != blank %}<h3>{{ block.settings.heading | escape }}</h3>{% endif %}
+                <div class="pp-body">{{ block.settings.body }}</div>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pro Pod content",
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Section layout",
+      "options": [
+        {
+          "value": "hero",
+          "label": "Hero"
+        },
+        {
+          "value": "split",
+          "label": "Image and text"
+        },
+        {
+          "value": "cards",
+          "label": "Cards"
+        },
+        {
+          "value": "faq",
+          "label": "FAQs"
+        },
+        {
+          "value": "text",
+          "label": "Text"
+        },
+        {
+          "value": "banner",
+          "label": "Photo banner"
+        },
+        {
+          "value": "cta",
+          "label": "Final purchase"
+        }
+      ],
+      "default": "split"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Navigation anchor"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Small heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "asset",
+      "label": "Bundled image filename"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Image description"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse",
+      "label": "Image on the left",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "buy",
+      "label": "Show price and purchase button",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Purchase button",
+      "default": "Order Now"
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Small print"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "ink",
+      "label": "Text color",
+      "default": "#08275c"
+    },
+    {
+      "type": "color",
+      "id": "accent",
+      "label": "Button color",
+      "default": "#0066ff"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Vertical spacing",
+      "min": 16,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "max_blocks": 8,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Content item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "asset",
+          "label": "Bundled image filename"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Image description"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Number or short label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pro Pod content"
+    }
+  ]
+}
+{% endschema %}
