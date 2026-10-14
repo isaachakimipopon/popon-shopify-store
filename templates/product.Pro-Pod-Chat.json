@@ -54,7 +54,7 @@
         "eyebrow": "POP ON PRO POD™",
         "heading": "Your retainer deserves more than a rinse.",
         "body": "<p>Meet the five-minute ultrasonic cleaner for retainers, aligners, night guards, dentures, and removable veneers.</p><p>Help lift everyday buildup with one-touch cleaning that fits right into your routine.</p>",
-        "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_2.png",
+        "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_2_6ab37905-b13a-4df0-b2e5-dcc1ca159e27.png",
         "asset": "propod-hero.webp",
         "alt": "White Pro Pod ultrasonic cleaner on a bathroom counter",
         "reverse": false,
@@ -96,7 +96,7 @@
         "eyebrow": "",
         "heading": "Small bubbles. An active clean.",
         "body": "<p>Pro Pod sends 45,000 Hz ultrasonic waves through the water, creating microscopic bubbles that help dislodge residue from your appliance.</p><p>A five-minute cycle. A countdown you can see.</p>",
-        "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_3.png",
+        "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_3_2d655a37-28d8-4301-9692-5c4318e360cc.png",
         "asset": "propod-hero.webp",
         "alt": "Open Pro Pod with stainless steel tank and digital countdown",
         "reverse": false,
@@ -255,7 +255,7 @@
           "settings": {
             "heading": "Retainers",
             "body": "",
-            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_11.png",
+            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_13_Nightguard.png",
             "asset": "",
             "alt": "",
             "badge": "01"
@@ -266,7 +266,7 @@
           "settings": {
             "heading": "Aligners",
             "body": "",
-            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_13.png",
+            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_11_Aligner.png",
             "asset": "",
             "alt": "",
             "badge": "02"
@@ -277,7 +277,7 @@
           "settings": {
             "heading": "Night guards",
             "body": "",
-            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_12.png",
+            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_12_Retainer.png",
             "asset": "",
             "alt": "",
             "badge": "03"
@@ -288,7 +288,7 @@
           "settings": {
             "heading": "Dentures",
             "body": "",
-            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_14.png",
+            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_14_Dentures.png",
             "asset": "",
             "alt": "",
             "badge": "04"
@@ -299,7 +299,7 @@
           "settings": {
             "heading": "Removable veneers",
             "body": "",
-            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_10.png",
+            "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_10_Veneer.png",
             "asset": "",
             "alt": "",
             "badge": "05"
@@ -427,7 +427,7 @@
         "eyebrow": "POP ON PRO POD™",
         "heading": "Give your appliance a fresh start.",
         "body": "<p>Make active cleaning part of your everyday routine.</p>",
-        "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_8.png",
+        "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_8_1ce4982b-ad9c-43a8-90c0-03956deb82aa.png",
         "asset": "propod-hero.webp",
         "alt": "Pro Pod ultrasonic cleaner",
         "reverse": false,
