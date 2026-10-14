@@ -317,6 +317,9 @@
         "item3",
         "item4"
       ],
+      "custom_css": [
+        ".pp-badge{display: none;}"
+      ],
       "settings": {
         "mode": "cards",
         "anchor": "",
