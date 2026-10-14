@@ -381,16 +381,6 @@
             "badge": ""
           }
         },
-        "item2": {
-          "type": "item",
-          "settings": {
-            "heading": "Will it remove every stain?",
-            "body": "<p>Results depend on the appliance and its condition. Permanent discoloration, scratches, and heavy deposits may remain. Pro Pod does not repair worn or damaged appliances.</p>",
-            "asset": "",
-            "alt": "",
-            "badge": ""
-          }
-        },
         "item3": {
           "type": "item",
           "settings": {
@@ -400,13 +390,34 @@
             "alt": "",
             "badge": ""
           }
+        },
+        "item_KAgCgC": {
+          "type": "item",
+          "settings": {
+            "heading": "How often should I use Pop On Pro Pod?",
+            "body": "<p>Most Pop On users clean their veneers or retainers once a day, or at least a few times per week.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": ""
+          }
+        },
+        "item2": {
+          "type": "item",
+          "settings": {
+            "heading": "What if I don’t notice a difference?",
+            "body": "<p>You’re covered by our 30-day money back guarantee and a 1-year limited manufacturer warranty. If you’re not happy, contact us and we’ll make it right.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": ""
+          }
         }
       },
       "block_order": [
         "item0",
         "item1",
-        "item2",
-        "item3"
+        "item3",
+        "item_KAgCgC",
+        "item2"
       ],
       "settings": {
         "mode": "faq",
