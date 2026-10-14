@@ -55,7 +55,7 @@
       "settings": {
         "mode": "hero",
         "anchor": "order",
-        "eyebrow": "POP ON PRO POD™",
+        "eyebrow": "POP ON PRO POD® - Ultrasonic Cleaner",
         "heading": "Your retainer deserves more than a rinse.",
         "body": "<p>Meet the five-minute ultrasonic cleaner for retainers, aligners, night guards, dentures, and removable veneers.</p><p>Help lift everyday buildup with one-touch cleaning that fits right into your routine.</p>",
         "image": "shopify://shop_images/Pro_Pod_Lifestyle_Image_2_6ab37905-b13a-4df0-b2e5-dcc1ca159e27.png",
@@ -107,7 +107,7 @@
         "buy": true,
         "button": "Order Now",
         "note": "",
-        "background": "#EDF8FF",
+        "background": "#edf8ff",
         "ink": "#08275c",
         "accent": "#0066ff",
         "padding": 56
