@@ -1,4 +1,12 @@
-<header class="pp-nav"><div class="pp-nav-inner"><a class="pp-logo" href="{{ routes.root_url }}">{% if section.settings.logo != blank %}{{ section.settings.logo | image_url: width: 260 | image_tag: widths: '130,260', sizes: '130px', alt: shop.name }}{% else %}{{ section.settings.brand | escape }}{% endif %}</a><nav aria-label="{{ section.settings.nav_label | escape }}">{% for block in section.blocks %}<a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>{% endfor %}</nav><a class="pp-button" href="#order">{{ section.settings.button | escape }}</a></div></header>
+<header class="pp-nav"><div class="pp-nav-inner"><a class="pp-logo" href="{{ routes.root_url }}">{% if section.settings.logo != blank %}{{ section.settings.logo | image_url: width: 260 | image_tag: widths: '130,260', sizes: '130px', alt: shop.name }}{% else %}{{ section.settings.brand | escape }}{% endif %}</a><nav aria-label="{{ section.settings.nav_label | escape }}">{% for block in section.blocks %}<a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>{% endfor %}</nav>{% assign header_form_id = 'propod-header-' | append: section.id %}
+{% form 'product', product, id: header_form_id %}
+  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  <input type="hidden" name="quantity" value="1">
+  <button class="pp-button" type="submit" name="add"
+    {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}>
+    {{ section.settings.button | escape }}
+  </button>
+{% endform %}</div></header>
 {% schema %}
 {
   "name": "Pro Pod navigation",
