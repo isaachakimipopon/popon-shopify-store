@@ -364,8 +364,8 @@
         "item0": {
           "type": "item",
           "settings": {
-            "heading": "How long does cleaning take?",
-            "body": "<p>The standard cycle runs for five minutes. The digital display counts down the remaining time.</p>",
+            "heading": "How long does it take to clean?",
+            "body": "<p>5 minutes. The digital display counts down the remaining time.</p>",
             "asset": "",
             "alt": "",
             "badge": ""
@@ -375,7 +375,7 @@
           "type": "item",
           "settings": {
             "heading": "How does it clean?",
-            "body": "<p>Ultrasonic waves create microscopic bubbles in the water that help loosen everyday residue. Pro Pod also features four built-in UV lights.</p>",
+            "body": "<p>Ultrasonic waves create microscopic bubbles in the water that help loosen everyday residue. Four UV lights target bacteria.</p>",
             "asset": "",
             "alt": "",
             "badge": ""
