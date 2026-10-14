@@ -1,0 +1,38 @@
+<footer class="pp-footer"><p>{{ section.settings.brand | escape }}</p><div>{% for block in section.blocks %}<a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>{% endfor %}</div></footer>
+{% schema %}
+{
+  "name": "Pro Pod footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand",
+      "label": "Brand",
+      "default": "Pop On Smiles"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Footer link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Pro Pod footer"
+    }
+  ]
+}
+{% endschema %}

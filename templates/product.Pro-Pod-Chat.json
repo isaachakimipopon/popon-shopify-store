@@ -8,533 +8,493 @@
  * ------------------------------------------------------------
  */
 {
+  "layout": "propod-campaign",
   "sections": {
-    "main": {
-      "type": "product-information",
+    "nav": {
+      "type": "propod-navigation",
       "blocks": {
-        "media-gallery": {
-          "type": "_product-media-gallery",
-          "static": true,
+        "how": {
+          "type": "link",
           "settings": {
-            "media_presentation": "grid",
-            "media_columns": "two",
-            "image_gap": 4,
-            "large_first_image": false,
-            "icons_style": "none",
-            "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
-            "media_radius": 0,
-            "extend_media": false,
-            "zoom": true,
-            "video_loop": false,
-            "hide_variants": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
-          "settings": {
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_icgrde": {
-              "type": "group",
-              "name": "Header",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "placeholder": "",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
-              ]
-            },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
-                "alignment": "left",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
-              "settings": {
-                "stacking": true,
-                "show_pickup_availability": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {
-                    "style_class": "button"
-                  },
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
-            },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "group_icgrde",
-            "divider_VJhene",
-            "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi",
-            "text_aEtTtq"
-          ]
-        }
-      },
-      "disabled": true,
-      "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 48,
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "customcode_featured_product_HRwfDi": {
-      "type": "customcode-featured-product",
-      "blocks": {
-        "title_iFe33P": {
-          "type": "title",
-          "settings": {
-            "title_override": "",
-            "show_reviews": true,
-            "custom_review": "",
-            "m_margin_bottom": 10,
-            "d_margin_bottom": 20
+            "label": "How it works",
+            "url": "#how-it-works"
           }
         },
-        "variant_selector_pVYxPC": {
-          "type": "variant_selector",
+        "benefits": {
+          "type": "link",
           "settings": {
-            "container_type": "grid-type",
-            "title_placement": "within",
-            "hide_thumb_images": "Denominations | Qty | Color",
-            "hide_option_title": "",
-            "hide_most_popular": "Denominations | Qty",
-            "display_dynamic_variant_image": false,
-            "display_price_diff": false,
-            "price_diff_settings": "whole",
-            "m_margin_bottom": 10,
-            "d_margin_bottom": 20
+            "label": "Benefits",
+            "url": "#benefits"
           }
         },
-        "selling_plan_cKNXyy": {
-          "type": "selling_plan",
+        "faq": {
+          "type": "link",
           "settings": {
-            "rounding": true,
-            "otp": "",
-            "sbs": "",
-            "subscription_description": "",
-            "m_margin_bottom": 10,
-            "d_margin_bottom": 20
-          }
-        },
-        "upload_lift_app_block_B7z4ex": {
-          "type": "shopify://apps/upload-lift/blocks/app-block/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
-          "settings": {
-            "product": "{{ product }}",
-            "field": ""
-          }
-        },
-        "buy_button_dT4wwt": {
-          "type": "buy_button",
-          "settings": {
-            "blurb": "",
-            "display_payment": true,
-            "footer_blurb": "",
-            "display_compare_price": false,
-            "display_alt_financing": false,
-            "alt_financing_link": "",
-            "alt_financing_text": "",
-            "display_bottom_payment": false,
-            "alt_financing_footer": "",
-            "m_margin_bottom": 10,
-            "d_margin_bottom": 20
-          }
-        },
-        "description_EbxCM7": {
-          "type": "description",
-          "settings": {
-            "m_margin_bottom": 10,
-            "d_margin_bottom": 20
-          }
-        },
-        "accordion_cMYdC4": {
-          "type": "accordion",
-          "settings": {
-            "accordion_title": "<p>TERMS AND CONDITIONS</p>",
-            "video_link": "",
-            "content": "",
-            "page": "termsandconditions",
-            "display_html_content": false,
-            "text": "",
-            "additional_content": "",
-            "button_link": "",
-            "button_text": "",
-            "custom_html": ""
-          }
-        },
-        "accordion_9fTwmq": {
-          "type": "accordion",
-          "settings": {
-            "accordion_title": "<p>PRIVACY POLICY</p>",
-            "video_link": "",
-            "content": "",
-            "page": "privacypolicy",
-            "display_html_content": false,
-            "text": "",
-            "additional_content": "",
-            "button_link": "",
-            "button_text": "",
-            "custom_html": ""
-          }
-        },
-        "accordion_pNGji3": {
-          "type": "accordion",
-          "settings": {
-            "accordion_title": "<p>POP ON PROMISE</p>",
-            "video_link": "",
-            "content": "",
-            "page": "promise",
-            "display_html_content": false,
-            "text": "",
-            "additional_content": "",
-            "button_link": "",
-            "button_text": "",
-            "custom_html": ""
+            "label": "FAQs",
+            "url": "#faqs"
           }
         }
       },
       "block_order": [
-        "title_iFe33P",
-        "variant_selector_pVYxPC",
-        "selling_plan_cKNXyy",
-        "upload_lift_app_block_B7z4ex",
-        "buy_button_dT4wwt",
-        "description_EbxCM7",
-        "accordion_cMYdC4",
-        "accordion_9fTwmq",
-        "accordion_pNGji3"
-      ],
-      "name": "C Featured Product",
-      "settings": {
-        "product_override": "",
-        "enable_partially": false,
-        "plan_fee": 0,
-        "display_variant_price": true,
-        "additional_product_tag": "",
-        "partially_additional_product": "",
-        "freebie_fee": 0,
-        "bottom_text": "We’re All In! Prices include $99 non refundable plan fee (before taxes)",
-        "mobile_count": "2.3",
-        "desktop_count": "1"
-      }
-    },
-    "17601015186c120833": {
-      "type": "_blocks",
-      "blocks": {
-        "bundler_bundler_target_element_6hbyLr": {
-          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "bundler_bundler_target_element_6hbyLr"
+        "how",
+        "benefits",
+        "faq"
       ],
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "brand": "POP ON",
+        "nav_label": "Page navigation",
+        "button": "Order Now"
       }
     },
-    "17851703850d429cc0": {
-      "type": "_blocks",
+    "hero": {
+      "type": "propod-panel",
+      "settings": {
+        "mode": "hero",
+        "anchor": "order",
+        "eyebrow": "POP ON PRO POD™",
+        "heading": "Your retainer deserves more than a rinse.",
+        "body": "<p>Meet the five-minute ultrasonic cleaner for retainers, aligners, night guards, dentures, and removable veneers.</p><p>Help lift everyday buildup with one-touch cleaning that fits right into your routine.</p>",
+        "image": "shopify://shop_images/Open_ultrasonic_cleaner_with_clear_retainer-2.png",
+        "asset": "propod-hero.webp",
+        "alt": "White Pro Pod ultrasonic cleaner on a bathroom counter",
+        "reverse": false,
+        "buy": true,
+        "button": "Order Now",
+        "note": "5-minute cycle • Ultrasonic cleaning • 4 UV lights • Digital countdown",
+        "background": "#edf8ff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
+      }
+    },
+    "problem": {
+      "type": "propod-panel",
+      "settings": {
+        "mode": "split",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "You wear it every day. What’s collecting on it?",
+        "body": "<p>A quick rinse can wash away loose debris. But everyday residue can collect along the grooves, edges, and surfaces of your appliance.</p><p>Pro Pod adds ultrasonic cleaning to your routine, helping loosen buildup without manually scrubbing every little corner.</p>",
+        "image": "shopify://shop_images/Transparent_dental_retainer_in_hand.png",
+        "asset": "propod-photo-1.png",
+        "alt": "Removable veneers being placed into a Pro Pod",
+        "reverse": true,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#ffffff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
+      }
+    },
+    "technology": {
+      "type": "propod-panel",
+      "settings": {
+        "mode": "split",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Small bubbles. An active clean.",
+        "body": "<p>Pro Pod sends 45,000 Hz ultrasonic waves through the water, creating microscopic bubbles that help dislodge residue from your appliance.</p><p>A five-minute cycle. A countdown you can see.</p>",
+        "image": "shopify://shop_images/Open-lid_ultrasonic_cleaner_in_bathroom-1.png",
+        "asset": "propod-hero.webp",
+        "alt": "Open Pro Pod with stainless steel tank and digital countdown",
+        "reverse": false,
+        "buy": true,
+        "button": "Order Now",
+        "note": "",
+        "background": "#e4f4ff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
+      }
+    },
+    "steps": {
+      "type": "propod-panel",
       "blocks": {
-        "amazon_reviews_grid_widget_block_product_3beqqM": {
-          "type": "shopify://apps/amazon-reviews/blocks/grid-widget-block.product/88ab28f3-a438-4eb3-a83e-f1a9c62c5069",
+        "item0": {
+          "type": "item",
           "settings": {
-            "font": "default",
-            "themeId": "light",
-            "reviewsType": "image_first",
-            "showDate": true,
-            "fixedReviewsHeight": false,
-            "textStyle": "plain",
-            "alignment": "left",
-            "infoPosition": "top",
-            "ratingStyle": "left"
+            "heading": "Fill.",
+            "body": "<p>Add water to the tank, following the fill instructions.</p>",
+            "image": "shopify://shop_images/Pitcher_Pouring_Water_into_Ultrasonic_Cleaner-4.png",
+            "asset": "",
+            "alt": "",
+            "badge": "01"
+          }
+        },
+        "item1": {
+          "type": "item",
+          "settings": {
+            "heading": "Place.",
+            "body": "<p>Put your compatible appliance inside and close the lid.</p>",
+            "image": "shopify://shop_images/Retainer_lowered_into_ultrasonic_cleaner-5.png",
+            "asset": "",
+            "alt": "",
+            "badge": "02"
+          }
+        },
+        "item2": {
+          "type": "item",
+          "settings": {
+            "heading": "Press.",
+            "body": "<p>Start the five-minute cycle. When it finishes, remove and rinse as directed.</p>",
+            "image": "shopify://shop_images/Fingertip_pressing_white_device_power_button-6.png",
+            "asset": "",
+            "alt": "",
+            "badge": "03"
           }
         }
       },
       "block_order": [
-        "amazon_reviews_grid_widget_block_product_3beqqM"
+        "item0",
+        "item1",
+        "item2"
       ],
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "mode": "cards",
+        "anchor": "how-it-works",
+        "eyebrow": "",
+        "heading": "Three steps to a better cleaning routine.",
+        "body": "",
+        "asset": "",
+        "alt": "",
+        "reverse": false,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#ffffff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
       }
     },
-    "customcode_content_generator_rUW68y": {
-      "type": "customcode-content-generator",
+    "benefits": {
+      "type": "propod-panel",
       "blocks": {
-        "content_FQRx6B": {
-          "type": "content",
+        "item0": {
+          "type": "item",
           "settings": {
-            "text_alignment": "c-text-center",
-            "content": "<h3><strong>MORE REVIEWS FROM POP ON</strong></h3>"
+            "heading": "Cleaning that gets into the details",
+            "body": "<p>Helps loosen residue around grooves and edges.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": "≈"
+          }
+        },
+        "item1": {
+          "type": "item",
+          "settings": {
+            "heading": "A countdown you can see",
+            "body": "<p>Know when the cycle will finish without setting a separate timer.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": "5:00"
+          }
+        },
+        "item2": {
+          "type": "item",
+          "settings": {
+            "heading": "Room for your daily essentials",
+            "body": "<p>A 200 mL stainless steel tank. Check that your appliance fits before use.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": "200"
           }
         }
       },
       "block_order": [
-        "content_FQRx6B"
+        "item0",
+        "item1",
+        "item2"
       ],
-      "name": "C Content Generator",
       "settings": {
-        "d_padding_top": true,
-        "d_padding_bottom": true
+        "mode": "cards",
+        "anchor": "benefits",
+        "eyebrow": "",
+        "heading": "More than one reason to make room for it.",
+        "body": "",
+        "asset": "",
+        "alt": "",
+        "reverse": false,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#f5f8fb",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
       }
     },
-    "customode_loox_reviews_3WdAFq": {
-      "type": "customode-loox-reviews",
-      "name": "C Loox Reviews",
+    "lifestyle": {
+      "type": "propod-panel",
       "settings": {
-        "only_photos": false,
-        "hide_thumbnails": false,
-        "product_handle": "",
-        "aggregated": true,
-        "data-limit": 4,
-        "maxwidth": 1080
+        "mode": "banner",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "",
+        "body": "",
+        "image": "shopify://shop_images/White_Pro_Pod_with_pale_blue_towel-7.png",
+        "asset": "propod-photo-0.jpg",
+        "alt": "Pro Pod and packaging on a bathroom counter",
+        "reverse": false,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#ffffff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
+      }
+    },
+    "compatible": {
+      "type": "propod-panel",
+      "blocks": {
+        "item0": {
+          "type": "item",
+          "settings": {
+            "heading": "Retainers",
+            "body": "",
+            "image": "shopify://shop_images/Clear_dental_retainer_on_white-8.png",
+            "asset": "",
+            "alt": "",
+            "badge": "01"
+          }
+        },
+        "item1": {
+          "type": "item",
+          "settings": {
+            "heading": "Aligners",
+            "body": "",
+            "image": "shopify://shop_images/Clear_dental_aligner_on_white-9.png",
+            "asset": "",
+            "alt": "",
+            "badge": "02"
+          }
+        },
+        "item2": {
+          "type": "item",
+          "settings": {
+            "heading": "Night guards",
+            "body": "",
+            "image": "shopify://shop_images/Clear_horseshoe_dental_night_guard-10.png",
+            "asset": "",
+            "alt": "",
+            "badge": "03"
+          }
+        },
+        "item3": {
+          "type": "item",
+          "settings": {
+            "heading": "Dentures",
+            "body": "",
+            "image": "shopify://shop_images/Realistic_upper_and_lower_denture_set-11.png",
+            "asset": "",
+            "alt": "",
+            "badge": "04"
+          }
+        },
+        "item4": {
+          "type": "item",
+          "settings": {
+            "heading": "Removable veneers",
+            "body": "",
+            "image": "shopify://shop_images/Ivory_removable_veneer_arch-12.png",
+            "asset": "",
+            "alt": "",
+            "badge": "05"
+          }
+        }
+      },
+      "block_order": [
+        "item0",
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ],
+      "settings": {
+        "mode": "cards",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "For the appliance you already wear.",
+        "body": "<p>Follow your appliance manufacturer’s guidance on ultrasonic cleaning and cleaning solutions.</p>",
+        "asset": "",
+        "alt": "",
+        "reverse": false,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#ffffff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
+      }
+    },
+    "brand": {
+      "type": "propod-panel",
+      "settings": {
+        "mode": "text",
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "From the team behind Pop On Veneers.",
+        "body": "<p>At Pop On Smiles, removable appliances are part of what we do. Pro Pod extends that focus to an everyday essential: caring for the appliance you already have.</p>",
+        "asset": "",
+        "alt": "",
+        "reverse": false,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#f6fbff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 40
+      }
+    },
+    "faqs": {
+      "type": "propod-panel",
+      "blocks": {
+        "item0": {
+          "type": "item",
+          "settings": {
+            "heading": "How long does cleaning take?",
+            "body": "<p>The standard cycle runs for five minutes. The digital display counts down the remaining time.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": ""
+          }
+        },
+        "item1": {
+          "type": "item",
+          "settings": {
+            "heading": "How does it clean?",
+            "body": "<p>Ultrasonic waves create microscopic bubbles in the water that help loosen everyday residue. Pro Pod also features four built-in UV lights.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": ""
+          }
+        },
+        "item2": {
+          "type": "item",
+          "settings": {
+            "heading": "Will it remove every stain?",
+            "body": "<p>Results depend on the appliance and its condition. Permanent discoloration, scratches, and heavy deposits may remain. Pro Pod does not repair worn or damaged appliances.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": ""
+          }
+        },
+        "item3": {
+          "type": "item",
+          "settings": {
+            "heading": "Can I add a cleaning tablet?",
+            "body": "<p>Use a cleaning solution or tablet only as directed by both the Pro Pod instructions and your appliance’s care instructions.</p>",
+            "asset": "",
+            "alt": "",
+            "badge": ""
+          }
+        }
+      },
+      "block_order": [
+        "item0",
+        "item1",
+        "item2",
+        "item3"
+      ],
+      "settings": {
+        "mode": "faq",
+        "anchor": "faqs",
+        "eyebrow": "",
+        "heading": "A few things you might be wondering.",
+        "body": "",
+        "asset": "",
+        "alt": "",
+        "reverse": false,
+        "buy": false,
+        "button": "Order Now",
+        "note": "",
+        "background": "#ffffff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 56
+      }
+    },
+    "final": {
+      "type": "propod-panel",
+      "settings": {
+        "mode": "cta",
+        "anchor": "",
+        "eyebrow": "POP ON PRO POD™",
+        "heading": "Give your appliance a fresh start.",
+        "body": "<p>Make active cleaning part of your everyday routine.</p>",
+        "image": "shopify://shop_images/Open-lid_Pro_Pod_dental_cleaner.png",
+        "asset": "propod-hero.webp",
+        "alt": "Pro Pod ultrasonic cleaner",
+        "reverse": false,
+        "buy": true,
+        "button": "Order Now",
+        "note": "",
+        "background": "#ffffff",
+        "ink": "#08275c",
+        "accent": "#0066ff",
+        "padding": 24
+      }
+    },
+    "footer": {
+      "type": "propod-footer",
+      "blocks": {
+        "contact": {
+          "type": "link",
+          "settings": {
+            "label": "Contact",
+            "url": "/pages/contact-us"
+          }
+        },
+        "shipping": {
+          "type": "link",
+          "settings": {
+            "label": "Shipping",
+            "url": "/policies/shipping-policy"
+          }
+        },
+        "returns": {
+          "type": "link",
+          "settings": {
+            "label": "Returns",
+            "url": "/policies/refund-policy"
+          }
+        },
+        "privacy": {
+          "type": "link",
+          "settings": {
+            "label": "Privacy",
+            "url": "/policies/privacy-policy"
+          }
+        }
+      },
+      "block_order": [
+        "contact",
+        "shipping",
+        "returns",
+        "privacy"
+      ],
+      "settings": {
+        "brand": "Pop On Smiles"
       }
     }
   },
   "order": [
-    "main",
-    "customcode_featured_product_HRwfDi",
-    "17601015186c120833",
-    "17851703850d429cc0",
-    "customcode_content_generator_rUW68y",
-    "customode_loox_reviews_3WdAFq"
+    "nav",
+    "hero",
+    "problem",
+    "technology",
+    "steps",
+    "benefits",
+    "lifestyle",
+    "compatible",
+    "brand",
+    "faqs",
+    "final",
+    "footer"
   ]
 }
