@@ -1,0 +1,55 @@
+<header class="pp-nav"><div class="pp-nav-inner"><a class="pp-logo" href="{{ routes.root_url }}">{% if section.settings.logo != blank %}{{ section.settings.logo | image_url: width: 260 | image_tag: widths: '130,260', sizes: '130px', alt: shop.name }}{% else %}{{ section.settings.brand | escape }}{% endif %}</a><nav aria-label="{{ section.settings.nav_label | escape }}">{% for block in section.blocks %}<a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</a>{% endfor %}</nav><a class="pp-button" href="#order">{{ section.settings.button | escape }}</a></div></header>
+{% schema %}
+{
+  "name": "Pro Pod navigation",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "brand",
+      "label": "Brand",
+      "default": "POP ON"
+    },
+    {
+      "type": "text",
+      "id": "nav_label",
+      "label": "Navigation description",
+      "default": "Page navigation"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button label",
+      "default": "Order Now"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Navigation link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Pro Pod navigation"
+    }
+  ]
+}
+{% endschema %}
