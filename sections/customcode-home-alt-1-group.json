@@ -1103,7 +1103,8 @@
             "description": "Both Top and Bottom Included",
             "price_display": "$499 | $699",
             "blurb": "",
-            "image": "shopify://shop_images/Homepage_Image_1-min.png"
+            "image": "shopify://shop_images/Homepage_Image_1-min.png",
+            "image_first": true
           }
         },
         "product_ydnaJH": {
@@ -1113,7 +1114,17 @@
             "description": "Just Top or Just Bottom",
             "price_display": "$299 | $499",
             "blurb": "",
-            "image": "shopify://shop_images/Homepage_Image_2-min.png"
+            "image": "shopify://shop_images/Homepage_Image_2-min.png",
+            "image_first": true
+          }
+        },
+        "button_dYnnHh": {
+          "type": "button",
+          "settings": {
+            "button_text": "GET STARTED",
+            "button_link": "https://poponveneers.com/pages/am-i-a-candidate",
+            "font_color": "",
+            "background_color": ""
           }
         },
         "callout_4fiB7x": {
@@ -1142,6 +1153,7 @@
       "block_order": [
         "product_eFPyg6",
         "product_ydnaJH",
+        "button_dYnnHh",
         "callout_4fiB7x",
         "letter_gbMBwk"
       ],
