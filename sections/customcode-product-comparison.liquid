@@ -4,8 +4,25 @@
       c-product-comparison .callout-container[data-block-id="{{ block.id }}"] {
         background-color: {{ block.settings.bg_color }};
       }
+    {% endif %}
+    {% if block.type == 'product' and block.settings.image_first %}
+      c-product-comparison .grid-item[data-block-id="{{ block.id }}"] {
+        flex-direction: column-reverse;
+      }
+    {% endif %}
+    {% if block.type == 'button' %}
+      {% if block.settings.font_color != blank %}
+        c-product-comparison .c-button[data-block-id="{{ block.id }}"] {
+          color: {{ block.settings.font_color }};
+        }
       {% endif %}
-    {% endfor %}
+      {% if block.settings.background_color != blank %}
+        c-product-comparison .c-button[data-block-id="{{ block.id }}"] {
+          background-color: {{ block.settings.background_color }};
+        }
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 {% endstyle %}
 
 <c-product-comparison>
@@ -14,7 +31,7 @@
       <div class="grid-container">
         {% for block in section.blocks %}
           {% if block.type == 'product' %}
-            <div class="grid-item">
+            <div class="grid-item" data-block-id="{{ block.id }}">
               <div class="info-container">
                 <h2 class="c-title">{{ block.settings.title }}</h2>
                 <p class="c-description">{{ block.settings.description }}</p>
@@ -42,26 +59,31 @@
       </a>
     {% endif %}
       {% for block in section.blocks %}
-        {% if block.type == 'callout' %}
-          <a href="{{ block.settings.callout_link }}" class="callout-container" data-block-id="{{ block.id }}">
-            <div class="callout-header">
-              {{ block.settings.header }}
-            </div>
-            <div class="action-container">
-              <h4 class="action-title">
-                {{ block.settings.action_title }}
-              </h4>
-              <div class="action-grid">
-                {% assign action_grid = block.settings.action_items | split: '|' %}
-                {% for action in action_grid %}
-                  <div class="action-item">
-                    {{ action }}
-                  </div>
-                {% endfor %}
+        {% case block.type %}
+          {% when 'callout' %}
+            <a href="{{ block.settings.callout_link }}" class="callout-container" data-block-id="{{ block.id }}">
+              <div class="callout-header">
+                {{ block.settings.header }}
               </div>
-            </div>
-          </a>
-        {% endif %}
+              <div class="action-container">
+                <h4 class="action-title">
+                  {{ block.settings.action_title }}
+                </h4>
+                <div class="action-grid">
+                  {% assign action_grid = block.settings.action_items | split: '|' %}
+                  {% for action in action_grid %}
+                    <div class="action-item">
+                      {{ action }}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </a>
+          {% when 'button' %}
+            <a href="{{ block.settings.button_link }}" class="c-button" data-block-id="{{ block.id }}">
+              {{ block.settings.button_text }}
+            </a>
+        {% endcase %}
       {% endfor %}
     </div>
     {% for block in section.blocks %}
@@ -139,6 +161,12 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_first",
+          "label": "Show image first",
+          "default": false
         }
       ]
     },
@@ -171,6 +199,32 @@
           "id": "action_items",
           "label": "Callout Options",
           "info": "[Item 1] | [Item 2] | [Item 3] format"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Font Color"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color"
         }
       ]
     },
