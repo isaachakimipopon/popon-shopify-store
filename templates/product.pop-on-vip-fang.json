@@ -298,11 +298,24 @@
             "title_placement": "above",
             "hide_thumb_images": "Color | Style",
             "hide_option_title": "",
+            "tooltip_option_labels": "",
+            "tooltip_option_html": "",
             "hide_most_popular": "Style",
             "display_dynamic_variant_image": false,
             "indicator_style": "border",
             "display_price_diff": false,
             "price_diff_settings": "whole",
+            "m_margin_bottom": 10,
+            "d_margin_bottom": 20
+          }
+        },
+        "property_input_NKmXCG": {
+          "type": "property_input",
+          "settings": {
+            "required": true,
+            "placeholder": "Previous Order Email",
+            "property": "Previous-Order-Email(R)",
+            "tooltip": "Previous Order Email Address",
             "m_margin_bottom": 10,
             "d_margin_bottom": 20
           }
@@ -315,6 +328,7 @@
             "background_color": "#02bf63",
             "text_color": "#ffffff",
             "blurb": "",
+            "blurb_html": "",
             "display_payment": true,
             "footer_blurb": "",
             "display_compare_price": true,
@@ -460,6 +474,7 @@
         "title_LtDrdM",
         "blurb_text_UYbQUB",
         "variant_selector_ygyB3p",
+        "property_input_NKmXCG",
         "buy_button_zKRDHV",
         "accordion_vN72Lp",
         "accordion_nbUzrp",
