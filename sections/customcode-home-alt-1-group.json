@@ -1100,7 +1100,7 @@
           "type": "product",
           "settings": {
             "title": "Full Set",
-            "description": "Both Top and Bottom Included",
+            "description": "<p>Both Top and Bottom Included</p><p><strong>+ Mystery Discount</strong></p>",
             "price_display": "$499 | $699",
             "blurb": "",
             "image": "shopify://shop_images/Homepage_Image_1-min.png",
@@ -1111,7 +1111,7 @@
           "type": "product",
           "settings": {
             "title": "Half Set",
-            "description": "Just Top or Just Bottom",
+            "description": "<p>Just Top or Just Bottom</p>",
             "price_display": "$299 | $499",
             "blurb": "",
             "image": "shopify://shop_images/Homepage_Image_2-min.png",
@@ -1123,7 +1123,7 @@
           "settings": {
             "button_text": "GET STARTED",
             "button_link": "https://poponveneers.com/pages/am-i-a-candidate",
-            "font_color": "#FFFFFF",
+            "font_color": "#ffffff",
             "background_color": "#003659"
           }
         },
