@@ -34,7 +34,7 @@
             <div class="grid-item" data-block-id="{{ block.id }}">
               <div class="info-container">
                 <h2 class="c-title">{{ block.settings.title }}</h2>
-                <p class="c-description">{{ block.settings.description }}</p>
+                <div class="c-description">{{ block.settings.description }}</div>
                 <div class="price-container">
                   {% assign price_array = block.settings.price_display | split: '|' %}
                   <h3>
