@@ -1123,8 +1123,8 @@
           "settings": {
             "button_text": "GET STARTED",
             "button_link": "https://poponveneers.com/pages/am-i-a-candidate",
-            "font_color": "",
-            "background_color": ""
+            "font_color": "#FFFFFF",
+            "background_color": "#003659"
           }
         },
         "callout_4fiB7x": {
